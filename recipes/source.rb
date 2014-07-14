@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe "checkinstall"
+include_recipe "checkinstall::default"
 
 %W{#{node['ziproxy']['log_dir']} #{node['ziproxy']['config_dir']}}.each do |folder|
   directory folder do
